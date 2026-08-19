@@ -84,12 +84,13 @@ UIListLayout.Parent = ContentContainer
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.Padding = UDim.new(0, 8)
 
+-- Lista optimizada con codificación URL para evitar errores de red en Roblox
 local languages = {
-    {Name = "Español", File = "Español.text"},
+    {Name = "Español", File = "Espa%C3%B1ol.text"},
     {Name = "English", File = "English.text"},
-    {Name = "Português", File = "Português.text"},
-    {Name = "Guarani", File = "Guarani.text"},
-    {Name = "한국인", File = "한국인.text"}
+    {Name = "Português", File = "Portugu%C3%AAs.text"},
+    {Name = "Guarani", File = "Guaran%C3%AD.text"},
+    {Name = "한국인", File = "%ED%95%9C%EA%B5%AD%EC%9D%B8.text"}
 }
 
 for i, lang in ipairs(languages) do
